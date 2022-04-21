@@ -23,10 +23,9 @@ function init(){
     }
 }
 
-init()
-
 function animate(){
     ctx.clearRect(0, 0, canvas.width, canvas.height)
+   
 
     particles.forEach(particle =>{
         particle.update(mouse)
@@ -36,6 +35,7 @@ function animate(){
     requestAnimationFrame(animate)
 }
 
+init()
 animate()
 
 window.addEventListener('mousemove', (e: MouseEvent)=>{

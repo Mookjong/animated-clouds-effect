@@ -19,19 +19,15 @@ export default class Particle {
             this.directionY *= -1;
         this.x += this.directionX;
         this.y += this.directionY;
-        if (mouse.x && mouse.y) {
-            if (Math.abs(mouse.x - this.x) < mouse.radius && Math.abs(mouse.y - this.y) < mouse.radius) {
-                if (this.size < this.maxSize) {
-                    this.size += 6;
-                }
-            }
-            else {
-                if (this.size > this.minSize) {
-                    this.size -= .1;
-                }
-                if (this.size < 0)
-                    this.size = 0;
-            }
+        if (mouse.x && mouse.y && Math.abs(mouse.x - this.x) < mouse.radius && Math.abs(mouse.y - this.y) < mouse.radius) {
+            if (this.size < this.maxSize)
+                this.size += 6;
+        }
+        else {
+            if (this.size > this.minSize)
+                this.size -= .1;
+            if (this.size < 0)
+                this.size = 0;
         }
     }
     draw(ctx) {

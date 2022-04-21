@@ -9,9 +9,11 @@ body{
 }
 
 #canvas1{
-    background: linear-gradient(
+    /* background: linear-gradient(
         #25364f,
         #4d71a5,
         #9bc4ff
-    );
+    ); */
+
+    background-color: #000;
 }

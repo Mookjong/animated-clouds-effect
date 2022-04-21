@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+#canvas1{
+    background: linear-gradient(
+        #25364f,
+        #4d71a5,
+        #9bc4ff
+    );
+}
